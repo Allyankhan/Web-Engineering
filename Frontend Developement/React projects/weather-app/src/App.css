@@ -1,0 +1,107 @@
+/* App.css */
+/* index.css */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+
+  background: #0a1fdf;      
+  font-family: Arial, sans-serif;
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: 100px auto; /* already centers horizontally */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 100px;
+  border-radius: 12px;
+  background-color: #0e74d3;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  /* NEW: center all children vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #09d61a;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.03);
+  
+}
+
+
+.error {
+  color: rgb(233, 17, 17);
+  margin-top: 10px;
+}
+
+.weatherCard {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #0db2e4;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* .loading {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+} */
+.spinner {
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #ffeb3b;
+  border-radius: 50%;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
