@@ -41,7 +41,7 @@
 
 // function calculate() {
 //             // 1. Prompt user for 3 numbers and convert them to Integers
-//             
+            
 //             var num1 = parseInt(prompt("Enter the first integer:"));
 //             var num2 = parseInt(prompt("Enter the second integer:"));
 //             var num3 = parseInt(prompt("Enter the third integer:"));
@@ -59,7 +59,7 @@
 //         calculate();
 
 // Task 5
-// 1. Create an array
+
 // var fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
 
 // // 2. Start dropdown
@@ -75,7 +75,7 @@
 
 
 // Task 6
-// 1. Take Basic Information
+
 // var regNo = prompt("Enter Registration Number:");
 // var name = prompt("Enter Student Name:");
 // var semester = prompt("Enter Semester:");
@@ -106,9 +106,9 @@
 //     grade = "F";
 // }
 
-// // 5. Display Result in Table Format
+
 // document.write("<h2>Student Grade Sheet</h2>");
-// document.write("<table border='1' cellpadding='10'>");
+// document.write("<table border='1' cellpadding='10' >");
 
 // document.write("<tr><th>Registration No</th><td>" + regNo + "</td></tr>");
 // document.write("<tr><th>Name</th><td>" + name + "</td></tr>");
@@ -127,43 +127,43 @@
 // document.write("</table>");
 
 // Task 7
-// 1. Define Functions
 
-function add(a, b) {
-    return a + b;
-}
 
-function subtract(a, b) {
-    return a - b;
-}
+// function add(a, b) {
+//     return a + b;
+// }
 
-function multiply(a, b) {
-    return a * b;
-}
+// function subtract(a, b) {
+//     return a - b;
+// }
 
-function divide(a, b) {
-    return a / b;
-}
+// function multiply(a, b) {
+//     return a * b;
+// }
 
-// 2. Take Inputs
+// function divide(a, b) {
+//     return a / b;
+// }
 
-var num1 = parseFloat(prompt("Enter first number:"));
-var operator = prompt("Enter operator (+, -, *, /):");
-var num2 = parseFloat(prompt("Enter second number:"));
+// // 2. Take Inputs
 
-// 3. Operator Mapping Object (NO if-else)
+// var num1 = parseFloat(prompt("Enter first number:"));
+// var operator = prompt("Enter operator (+, -, *, /):");
+// var num2 = parseFloat(prompt("Enter second number:"));
 
-var operations = {
-    "+": add,
-    "-": subtract,
-    "*": multiply,
-    "/": divide
-};
+// // 3. Operator Mapping Object (NO if-else)
 
-// 4. Call Corresponding Function
+// var operations = {
+//     "+": add,
+//     "-": subtract,
+//     "*": multiply,
+//     "/": divide
+// };
 
-var result = operations[operator](num1, num2);
+// // 4. Call Corresponding Function
 
-// 5. Display Result
+// var result = operations[operator](num1, num2);
 
-alert("Result: " + result);
+// // 5. Display Result
+
+// alert("Result: " + result);
