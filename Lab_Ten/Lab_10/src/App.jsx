@@ -14,6 +14,7 @@ import Stylesheet from './component/stylesheet'
 
 function App() {
   const [count, setCount] = useState(0)
+  const fruits = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry'];
 
   return (
     <>
@@ -42,7 +43,11 @@ function App() {
           {/* <Ternary name="Allyan Khan" /> */}
           {/* <Fruitlist /> */}
           {/* <ArrowFunction name="Allyan Khan" age={23} /> */}
-          <Stylesheet />
+          {/* <Stylesheet /> */}
+          
+          <Fruitlist fruits={fruits} />
+
+
 
       </section>
 
