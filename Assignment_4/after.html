@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSphere | Online Book Store</title>
+    
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #0066ff;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 10px;
+            background: var(--accent);
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 0;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary);
+        }
+
+        .search-bar {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .search-bar input {
+            padding: 12px;
+            width: 60%;
+            max-width: 500px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .book-card {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .book-card h3 {
+            margin: 12px 0 8px 0;
+            font-size: 1.1rem;
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover, button:focus {
+            background: var(--accent);
+            outline: 3px solid #ffcc00;
+        }
+
+        .login-section {
+            background: white;
+            padding: 30px;
+            max-width: 420px;
+            margin: 40px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 6px 0;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--primary);
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <nav aria-label="Main Navigation">
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">Bestsellers</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>BookSphere - Online Book Store</h1>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <label for="search">Search Books</label>
+            <input type="text" id="search" placeholder="Search by title, author or ISBN..." aria-describedby="search-help">
+            <small id="search-help">Example: Programming, Python, Fiction</small>
+        </div>
+
+        <main id="main-content">
+            <h2>Featured Books</h2>
+            
+            <div class="books-grid">
+                <!-- Book 1 -->
+                <div class="book-card">
+                    <img src="cleancode.jpg" 
+                         alt="Programming Book cover with code and laptop illustration">
+                    <h3>Clean Code</h3>
+                    <p>Robert C. Martin</p>
+                    <button aria-label="Add Clean Code book to shopping cart">Add to Cart - $29.99</button>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="book-card">
+                    <img src="atomic habits.jpg" 
+                         alt="Atomic Habits book cover showing orange background">
+                    <h3>Atomic Habits</h3>
+                    <p>James Clear</p>
+                    <button aria-label="Add Atomic Habits book to shopping cart">Add to Cart - $18.99</button>
+                </div>
+            </div>
+
+            <!-- Login Section -->
+            <div class="login-section">
+                <h2>Customer Login</h2>
+                <form>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit" aria-label="Login to your BookSphere account">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BookSphere - Accessible Online Bookstore</p>
+    </footer>
+
+</body>
+</html>
