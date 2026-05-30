@@ -1,0 +1,12 @@
+.heading {
+  color: blue;
+  text-align: center;
+}
+
+.box {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100px;
+  margin: auto;
+}

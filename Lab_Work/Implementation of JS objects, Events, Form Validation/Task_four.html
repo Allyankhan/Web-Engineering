@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+    <h2>Sign Up Form </h2>
+
+    <form id="signupForm" onsubmit="return validateForm(event)">
+        
+        <div class="form-row">
+            <label>Name:</label>
+            <input type="text" id="name">
+            <span id="nameError" class="error-message"></span>
+        </div>
+
+        <div class="form-row">
+            <label>Gender:</label>
+            <div>
+                <input type="radio" name="gender" id="genderMale" value="Male"> Male<br>
+                <input type="radio" name="gender" id="genderFemale" value="Female"> Female
+            </div>
+            <span id="genderError" class="error-message"></span>
+        </div>
+
+        <div class="form-row">
+            <label>Email:</label>
+            <input type="text" id="email">
+            <span id="emailError" class="error-message"></span>
+        </div>
+
+        <div class="form-row">
+            <label>Address:</label>
+            <textarea id="address"></textarea>
+            <span id="addressError" class="error-message"></span>
+        </div>
+
+        <div class="form-row">
+            <label>Login ID:</label>
+            <input type="text" id="loginId">
+            <span id="loginIdError" class="error-message"></span>
+        </div>
+
+        <div class="form-row">
+            <label>Password:</label>
+            <input type="password" id="password">
+            <span id="passwordError" class="error-message"></span>
+        </div>
+
+        <div class="form-row">
+            <label>Agreed with<br>Policy:</label>
+            <input type="checkbox" id="agree">
+            <span id="agreeError" class="error-message"></span>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset" onclick="clearErrors()">Reset</button>
+        </div>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
